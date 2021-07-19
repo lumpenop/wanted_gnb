@@ -38,13 +38,15 @@ a{
 
 .gnb-content{
     display: inline-flex;
-    width: 58%;
     justify-content: space-around;
- 
+    width: 60%;
 }
 
 .gnb-content > li{
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+
 }
 
 .gnb-content > li > a{
@@ -67,6 +69,7 @@ a{
 .gnb-side-content{
     display: inline-flex;
     padding: 10px 0;
+   
 }
 
 .gnb-side-content > li{
@@ -113,8 +116,14 @@ a{
     margin: auto 10px;
 }
 
+.gnb{
+    width: 90%;
+    margin: 0 auto;
+}
+
 .gnb-side{
     float: right;
+  
 }
 
 .explore-content{
@@ -213,7 +222,19 @@ a{
 }
 
 
-@media only screen and (max-width: 1019px){
+@media only screen and (max-width: 1153px){
+    .gnb{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .gnb-container{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 1040px){
     .web{
         display: none;
     }
@@ -246,14 +267,30 @@ a{
         width: 20%;
     }
 
-    .gnb-container{
-        width: 95%;
-    }
+   
     .gnb-side-content{
         padding: 0;
     }
 
-    
+    .gnb-container,
+    .gnb{
+        min-width: none !important;
+    }
+
+    .gnb{
+        width: 100%;
+    }
+    .gnb-container{
+        width: 95%;
+    }
+
+    .gnb-side{
+        width: 75px;
+    }
+
+    .gnb-content{
+        width: 150px;
+    }
 }
 
 

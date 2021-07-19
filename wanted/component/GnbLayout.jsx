@@ -23,7 +23,7 @@ class GnbLayout extends Component{
                                             <img src="../../image/search.png" alt="/" width="20" height="20" />
                                         </a>
                                     </li>
-                                    <li>
+                                    <li className="mobile">
                                         <div className="hamberg mobile">
                                             <span></span>
                                             <span></span>
